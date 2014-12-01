@@ -43,16 +43,19 @@ signal opCode : std_logic_vector(2 downto 0);
 begin		  
 -- Instruction Decoder
 process(opCode)
-case opCode is
-  when "000" =>   Z <= A; --signed addition	R-type
-  when "001" =>   Z <= B; --signed multiplication R-type
-  when "010" =>   Z <= A; --passthrough A R-type
-  when "011" =>   Z <= B; --passthrough B R-type
-  when "100" =>   Z <= A; --signed subtraction R-type
-  when "101" =>   Z <= B; --load immediate I-type
-  when "110" =>   Z <= A; --store halfword I-type
-  when "111" =>   Z <= B; --load halfword I-type
-end case;
+begin
+	case opCode is
+	  when "000" =>   opCode <= "000"; --signed addition	R-type
+	  when "001" =>   opCode <= "000"; --signed multiplication R-type
+	  when "010" =>   opCode <= "000"; --passthrough A R-type
+	  when "011" =>   opCode <= "000"; --passthrough B R-type
+	  when "100" =>   opCode <= "000"; --signed subtraction R-type
+	  when "101" =>   opCode <= "000"; --load immediate I-type
+	  when "110" =>   opCode <= "000"; --store halfword I-type
+	  when "111" =>   opCode <= "000"; --load halfword I-type
+	  when others =>  opCode <= "000";
+	end case;
+end process;
 
 -- PUT YOUR CODE HERE
 
