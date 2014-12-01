@@ -1,7 +1,27 @@
-88
+167
+~E 1 "./../src/adder16.vhd" 5 adder16
+~A 1 "./../src/adder16.vhd" 16 func
+~E 1 "./../src/ALU.vhd" 7 ALU
+~A 1 "./../src/ALU.vhd" 19 ALU_arc
+~E 1 "./../src/half_adder.vhd" 6 andGate
+~A 1 "./../src/half_adder.vhd" 12 func
+~E 1 "./../src/FullAdder.vhd" 25 FullAdder
+~A 1 "./../src/FullAdder.vhd" 31 func
+~E 1 "./../src/half_adder.vhd" 40 half_adder
+~A 1 "./../src/half_adder.vhd" 46 adder
+~E 1 "./../src/multiplier16.vhd" 8 multiplier16
+~A 1 "./../src/multiplier16.vhd" 21 multiply
+~E 1 "./../src/mux16.vhd" 6 mux16
+~A 1 "./../src/mux16.vhd" 21 mux
+~E 1 "./../src/FullAdder.vhd" 8 orGate
+~A 1 "./../src/FullAdder.vhd" 14 func
 ~E 1 "./../src/processor.vhd" 8 processor
 ~A 1 "./../src/processor.vhd" 17 behavioral
 ~E 1 "./../src/ram_256_byte.vhd" 5 ram_256_byte
 ~A 1 "./../src/ram_256_byte.vhd" 14 behavioral
 ~E 1 "./../src/register_file_16x8.vhd" 5 register_file_16x8
 ~A 1 "./../src/register_file_16x8.vhd" 17 behavioral
+~E 1 "./../src/subtractor16.vhd" 5 subtractor16
+~A 1 "./../src/subtractor16.vhd" 15 subtract
+~E 1 "./../src/half_adder.vhd" 23 xorGate
+~A 1 "./../src/half_adder.vhd" 29 func

@@ -1,3 +1,10 @@
 i<>.\src\processor.vhd
 i<>.\src\register_file_16x8.vhd
 i<>.\src\ram_256_byte.vhd
+i<>.\src\half_adder.vhd
+i<>.\src\FullAdder.vhd
+i<>.\src\adder16.vhd
+i<>.\src\subtractor16.vhd
+i<>.\src\multiplier16.vhd
+i<>.\src\mux16.vhd
+i<>.\src\ALU.vhd
