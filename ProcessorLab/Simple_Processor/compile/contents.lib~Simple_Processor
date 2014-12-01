@@ -1,1 +1,3 @@
-0
+2
+~E 1 "./../src/processor.vhd" 8 processor
+~A 1 "./../src/processor.vhd" 17 behavioral

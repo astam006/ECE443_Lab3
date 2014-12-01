@@ -3,10 +3,13 @@ Current Flow=Generic
 VCS=0
 version=3
 Current Config=compile
+
 [Configurations]
 compile=Simple_Processor
+
 [Library]
 Simple_Processor=.\Simple_Processor\Simple_Processor.lib
+
 [Settings]
 AccessRead=0
 AccessReadWrite=0
@@ -21,11 +24,22 @@ LANGUAGE=VHDL
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+fileopenfolder=C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src
+
 [LocalVerilogSets]
 EnableSLP=1
 EnableDebug=0
+
 [LocalVhdlSets]
 CompileWithDebug=0
+
 [$LibMap$]
 Simple_Processor=.
 Active_lib=
+
+[Files]
+/processor.vhd=-1
+
+[Files.Data]
+.\src\processor.vhd=VHDL Source Code
+

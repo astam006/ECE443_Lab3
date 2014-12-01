@@ -1,0 +1,7 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd" 
+MESSAGE "Compile Entity "processor"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "processor"" 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity => processor" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 
