@@ -1,2 +1,3 @@
 .\src\processor.vhd
 .\src\register_file_16x8.vhd
+.\src\ram_256_byte.vhd

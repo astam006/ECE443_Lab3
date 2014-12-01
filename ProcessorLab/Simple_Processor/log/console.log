@@ -1,0 +1,60 @@
+# Design: Design Simple_Processor already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: Flow Manager: Not Defined
+acom -reorder -O3 -work Simple_Processor -2008  $dsn/src/processor.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# Top-level unit(s) detected:
+# Entity => processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -O3 -work Simple_Processor -2008  $dsn/src/processor.vhd $dsn/src/register_file_16x8.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_32x8"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Architecture "behavioral" of Entity "register_file_32x8"
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Architecture "behavioral" of Entity "register_file_32x8"
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Architecture "behavioral" of Entity "register_file_32x8"
+# Error: COMP96_0056: register_file_16x8.vhd : (17, 1): Cannot find referenced entity declaration "register_file_32x8".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -work Simple_Processor -2008  $dsn/src/processor.vhd $dsn/src/register_file_16x8.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => processor
+# Entity => register_file_16x8
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# Error: COMP96_0367: register_file_16x8.vhd : (26, 65): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: register_file_16x8.vhd : (30, 14): Improper array length (32). Expected length is 16.
+# Error: COMP96_0367: register_file_16x8.vhd : (32, 15): Improper array length (32). Expected length is 16.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -work Simple_Processor -2008  $dsn/src/processor.vhd $dsn/src/register_file_16x8.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"

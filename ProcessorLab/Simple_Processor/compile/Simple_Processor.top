@@ -1,2 +1,3 @@
-processor ENTITY
+ram_256_byte ENTITY
 register_file_16x8 ENTITY
+processor ENTITY
