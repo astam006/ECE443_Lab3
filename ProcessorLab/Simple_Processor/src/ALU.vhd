@@ -11,6 +11,7 @@ entity ALU is
 			S0     : in  std_logic;							  -- First bit of mux selector signal
 			S1     : in  std_logic;							  -- Second bit of mux selector signal
 			S2		 : in  std_logic;							  -- Third bit of mux selector signal
+			C	   :	buffer std_logic_vector(15 downto 0);
 			status : out std_logic_vector(2 downto 0)   -- Status output signal
 	);
 end ALU;

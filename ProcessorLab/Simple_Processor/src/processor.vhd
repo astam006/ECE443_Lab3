@@ -28,6 +28,17 @@ architecture behavioral of processor is
 --    C : BUFFER STD_LOGIC_VECTOR(15 DOWNTO 0);
 --    CCR: OUT STD_LOGIC_VECTOR(2 DOWNTO 0));
 -- end component;
+component ALU is
+	port(A		:	in std_logic_vector(15 downto 0);		  -- Input signal A
+		 B		:	in std_logic_vector(15 downto 0);		  -- Input signal B
+		 R      : 	out std_logic_vector(15 downto 0); 		  -- Result output Signal
+		 S0     : 	in  std_logic;							  -- First bit of mux selector signal
+		 S1     : 	in  std_logic;							  -- Second bit of mux selector signal
+		 S2		: 	in  std_logic;							  -- Third bit of mux selector signal 
+		 C		:	buffer std_logic_vector(15 downto 0);
+		 status : 	out std_logic_vector(2 downto 0));        -- Status output signal
+	
+end component;
 
 begin
 

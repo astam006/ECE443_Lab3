@@ -1,8 +1,8 @@
-167
+306
 ~E 1 "./../src/adder16.vhd" 5 adder16
 ~A 1 "./../src/adder16.vhd" 16 func
 ~E 1 "./../src/ALU.vhd" 7 ALU
-~A 1 "./../src/ALU.vhd" 19 ALU_arc
+~A 1 "./../src/ALU.vhd" 20 ALU_arc
 ~E 1 "./../src/half_adder.vhd" 6 andGate
 ~A 1 "./../src/half_adder.vhd" 12 func
 ~E 1 "./../src/FullAdder.vhd" 25 FullAdder
