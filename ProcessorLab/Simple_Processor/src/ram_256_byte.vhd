@@ -6,8 +6,8 @@ entity ram_256_byte is
 	port ( 
 		clock, rw, cs: in std_logic;
 		address: in std_logic_vector(7 downto 0);
-		PortIn: in std_logic_vector(7 downto 0);
-		PortOut: out std_logic_vector(7 downto 0)
+		DataIn: in std_logic_vector(7 downto 0);
+		DataOut: out std_logic_vector(7 downto 0)
 	);
 end ram_256_byte;
 
@@ -17,16 +17,16 @@ signal ram : ram_array;
 begin
 	process(clock,rw,cs)
 	begin
-		if (cs='1') then
+		if (cs='1') then   --chip select (not necessary for this lab but may help with debugging)
 			if (rising_edge(clock)) then
 				if(rw='1') then
-					ram(conv_integer(address))<= PortIn;
+					ram(conv_integer(address))<= DataIn;
 				else				  
-					PortOut <= ram(conv_integer(address));
+					DataOut <= ram(conv_integer(address));
 				end if;
 			end if;
 		else
-			PortOut <= "ZZZZZZZZ";
+			DataOut <= "ZZZZZZZZ";
 		end if;
 	end process;
 end architecture behavioral;

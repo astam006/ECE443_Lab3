@@ -1,4 +1,4 @@
-30
+88
 ~E 1 "./../src/processor.vhd" 8 processor
 ~A 1 "./../src/processor.vhd" 17 behavioral
 ~E 1 "./../src/ram_256_byte.vhd" 5 ram_256_byte
