@@ -1,1 +1,2 @@
 processor ENTITY
+register_file_16x8 ENTITY

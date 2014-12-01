@@ -39,7 +39,9 @@ Active_lib=
 
 [Files]
 /processor.vhd=-1
+/register_file_16x8.vhd=-1
 
 [Files.Data]
 .\src\processor.vhd=VHDL Source Code
 
+.\src\register_file_16x8.vhd=VHDL Source Code

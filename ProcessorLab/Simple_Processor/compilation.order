@@ -1,1 +1,2 @@
 .\src\processor.vhd
+.\src\register_file_16x8.vhd

@@ -1,23 +1,36 @@
-timestamp=1417471619501
+timestamp=1417472481563
 
 [processor]
-A/behavioral=21|./../src/processor.vhd|17|1*0
+A/behavioral=21|./../src/processor.vhd|17|1*6297
 I=0*983
-I/behavioral=0*1398
+I/behavioral=0*2719
 M=11|0|vb4|1417471619380|./../src/processor.vhd|0*538*0x48e6dc3c4f1d313dd20ded1159c5296a1ea9c778|0*900*0x618c75ed5eb2ee20373c1f3310fc85bb
-M/behavioral=21|0|vb4|1417471619383|./../src/processor.vhd|0*1148*0x8b543862b3c927f278f79fd0fee3ae601aa4162c|0*1301*0x5ab63b4931a3fe70953a1928a063edc1
+M/behavioral=21|0|vb4|1417472481038|./../src/processor.vhd|0*1148*0x8b543862b3c927f278f79fd0fee3ae601aa4162c|0*1301*0x5ab63b4931a3fe70953a1928a063edc1
 R=./../src/processor.vhd|8
 Version=9.3.2744.sp1.09.4995  (Windows)|00000009789cd3f53756d0353230b00000090c01c7
 Version/behavioral=9.3.2744.sp1.09.4995  (Windows)|00000009789cd3f53756d0353230b00000090c01c7
 
+[register_file_16x8]
+A/behavioral=21|./../src/register_file_16x8.vhd|17|1*8396
+BinI32/behavioral=3*0
+I=0*2545
+I/behavioral=0*3533
+M=11|0|vb4|1417472453576|./../src/register_file_16x8.vhd|0*1962*0xb37ece2b7cac703897140e3061ea81d2c9ffb127|0*2444*0x618c75ed5eb2ee20373c1f3310fc85bb
+M/behavioral=21|0|vb4|1417472481045|./../src/register_file_16x8.vhd|0*2895*0x322d700b7e35c738dacc097080996f8c98c5c8e2|0*3418*0x5ab63b4931a3fe70953a1928a063edc1
+R=./../src/register_file_16x8.vhd|5
+Version=9.3.2744.sp1.09.4995  (Windows)|00000009789cd3f53756d0353230b00000090c01c7
+Version/behavioral=9.3.2744.sp1.09.4995  (Windows)|00000009789cd3f53756d0353230b00000090c01c7
+
 [~A]
-ModifyID=2
+ModifyID=16
 Version=73
 
 [~MFT]
-0=6|0Simple_Processor.mgf|1398|0
-1=0|1Simple_Processor.mgf|0|0
+0=19|0Simple_Processor.mgf|3533|176
+1=7|1Simple_Processor.mgf|8396|6297
+3=0|3Simple_Processor.mgf|0|0
 
 [~U]
 processor=11|0*0|
+register_file_16x8=11|0*1574|
 

@@ -1,3 +1,5 @@
-2
+16
 ~E 1 "./../src/processor.vhd" 8 processor
 ~A 1 "./../src/processor.vhd" 17 behavioral
+~E 1 "./../src/register_file_16x8.vhd" 5 register_file_16x8
+~A 1 "./../src/register_file_16x8.vhd" 17 behavioral
