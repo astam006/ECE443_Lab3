@@ -1,157 +1,157 @@
-timestamp=1417475100423
+timestamp=1417474612192
 
 [adder16]
-A/func=21|./../src/adder16.vhd|16|1*136101
-BinI32/func=3*17715
+A/func=21|./../src/adder16.vhd|16|1*67541
+BinI32/func=3*7510
 I=0*20392
 I/func=0*21124
 M=11|0|va7|1417474611656|./../src/adder16.vhd|0*20013*0x2b2159eb7fc40543e4487f317e3bf3eada239064|0*20314*0xab32bc1a2daf049573e14469f634e0e6
-M/func=21|0|va7|1417475100084|./../src/adder16.vhd|0*20493*0xa8ac449f7712ea501d63cb1d9560f410648abdfb|0*21038*0xb33770ff1c10522f9491560174ac8e6c
+M/func=21|0|va7|1417474611661|./../src/adder16.vhd|0*20493*0xa8ac449f7712ea501d63cb1d9560f410648abdfb|0*21038*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/adder16.vhd|5
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/func=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [alu]
-A/alu_arc=A/ALU_arc 21|./../src/ALU.vhd|20|1*146767
-BinI32/alu_arc=3*19472
-I=0*29798
-I/alu_arc=I/ALU_arc 0*31937
-M=11|0|va7|1417475067953|./../src/ALU.vhd|0*29299*0x241efd8608288ed35ae3b42f98e57d34388ac695|0*29728*0xab32bc1a2daf049573e14469f634e0e6
-M/alu_arc=M/ALU_arc 21|0|va7|1417475100364|./../src/ALU.vhd|0*30022*0x68e93e664428f24ea8699458be26d39dbd8a860e|0*31856*0xb33770ff1c10522f9491560174ac8e6c
+A/alu_arc=A/ALU_arc 21|./../src/ALU.vhd|19|1*78207
+BinI32/alu_arc=3*9267
+I=0*26851
+I/alu_arc=I/ALU_arc 0*28990
+M=11|0|va7|1417474612067|./../src/ALU.vhd|0*26385*0xd681f26ccebfea8f39a93565727f09c8073dca53|0*26781*0xab32bc1a2daf049573e14469f634e0e6
+M/alu_arc=M/ALU_arc 21|0|va7|1417474612078|./../src/ALU.vhd|0*27075*0x024e7d42eb7727dff91c2b90d1455dbe7deb1465|0*28909*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/ALU.vhd|7
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/alu_arc=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [andgate]
-A/func=21|./../src/half_adder.vhd|12|1*128524
-BinI32/func=3*16463
+A/func=21|./../src/half_adder.vhd|12|1*59964
+BinI32/func=3*6258
 I=0*14830
 I/func=0*15173
 M=11|0|va7|1417474611425|./../src/half_adder.vhd|0*14547*0x8f57ded6686b05ebe59b62254ed348dc4c53dd92|0*14749*0xab32bc1a2daf049573e14469f634e0e6
-M/func=21|0|va7|1417475099887|./../src/half_adder.vhd|0*14931*0x6a5bb689f8a9be263a03a5f66a47ce51157d3eef|0*15084*0xb33770ff1c10522f9491560174ac8e6c
+M/func=21|0|va7|1417474611427|./../src/half_adder.vhd|0*14931*0x6a5bb689f8a9be263a03a5f66a47ce51157d3eef|0*15084*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/half_adder.vhd|6
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/func=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [fulladder]
-A/func=21|./../src/FullAdder.vhd|31|1*133453
+A/func=21|./../src/FullAdder.vhd|31|1*64893
 I=0*18788
 I/func=0*19562
 M=11|0|va7|1417474611585|./../src/FullAdder.vhd|0*18484*0xeeefe869bead2572fde0b48aa24303d40cb418b6|0*18706*0xab32bc1a2daf049573e14469f634e0e6
-M/func=21|0|va7|1417475100012|./../src/FullAdder.vhd|0*18891*0xaf8c93f3711ac91775ef77e55296e4f68a7e2de2|0*19472*0xb33770ff1c10522f9491560174ac8e6c
+M/func=21|0|va7|1417474611589|./../src/FullAdder.vhd|0*18891*0xaf8c93f3711ac91775ef77e55296e4f68a7e2de2|0*19472*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/FullAdder.vhd|25
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/func=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [half_adder]
-A/adder=21|./../src/half_adder.vhd|46|1*130570
+A/adder=21|./../src/half_adder.vhd|46|1*62010
 I=0*16656
 I/adder=0*17198
 M=11|0|va7|1417474611490|./../src/half_adder.vhd|0*16352*0x561ad9e9a3ff3aff997b740e971873078bae531c|0*16572*0xab32bc1a2daf049573e14469f634e0e6
-M/adder=21|0|va7|1417475099909|./../src/half_adder.vhd|0*16760*0x90b41e0be13e459a8b46267352008b9be971361e|0*17105*0xb33770ff1c10522f9491560174ac8e6c
+M/adder=21|0|va7|1417474611494|./../src/half_adder.vhd|0*16760*0x90b41e0be13e459a8b46267352008b9be971361e|0*17105*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/half_adder.vhd|40
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/adder=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [multiplier16]
-A/multiply=21|./../src/multiplier16.vhd|21|1*142087
-BinI32/multiply=3*18609
+A/multiply=21|./../src/multiplier16.vhd|21|1*73527
+BinI32/multiply=3*8404
 I=0*23390
 I/multiply=0*24008
 M=11|0|va7|1417474611848|./../src/multiplier16.vhd|0*22938*0x691ead86eca133bfe287cba1e41e080d475384a7|0*23302*0xab32bc1a2daf049573e14469f634e0e6
-M/multiply=21|0|va7|1417475100205|./../src/multiplier16.vhd|0*23691*0xdfca1bf3595a156e7d906b5c16dc43e215d371f3|0*23908*0xb33770ff1c10522f9491560174ac8e6c
+M/multiply=21|0|va7|1417474611853|./../src/multiplier16.vhd|0*23691*0xdfca1bf3595a156e7d906b5c16dc43e215d371f3|0*23908*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/multiplier16.vhd|8
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/multiply=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [mux16]
-A/mux=21|./../src/mux16.vhd|21|1*143789
-BinI32/mux=3*19007
+A/mux=21|./../src/mux16.vhd|21|1*75229
+BinI32/mux=3*8802
 I=0*25306
 I/mux=0*25942
 M=11|0|va7|1417474611954|./../src/mux16.vhd|0*24721*0x5ec6a065088fc8c641aaaa110bc0f84fca0d5480|0*25232*0xab32bc1a2daf049573e14469f634e0e6
-M/mux=21|0|va7|1417475100288|./../src/mux16.vhd|0*25471*0x78c4e9ea91030d3607e0d00ece82aa1622b12f2e|0*25861*0xb33770ff1c10522f9491560174ac8e6c
+M/mux=21|0|va7|1417474611960|./../src/mux16.vhd|0*25471*0x78c4e9ea91030d3607e0d00ece82aa1622b12f2e|0*25861*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/mux16.vhd|6
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/mux=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [orgate]
-A/func=21|./../src/FullAdder.vhd|14|1*132433
-BinI32/func=3*17294
+A/func=21|./../src/FullAdder.vhd|14|1*63873
+BinI32/func=3*7089
 I=0*17845
 I/func=0*18175
 M=11|0|va7|1417474611571|./../src/FullAdder.vhd|0*17568*0xfe04bfe9b8657cea3e173f9e3ee39e53e26f7cc6|0*17766*0xab32bc1a2daf049573e14469f634e0e6
-M/func=21|0|va7|1417475100004|./../src/FullAdder.vhd|0*17945*0x4f9ffc233d9a06e2220f7a3b492cbbaac0e24d31|0*18088*0xb33770ff1c10522f9491560174ac8e6c
+M/func=21|0|va7|1417474611575|./../src/FullAdder.vhd|0*17945*0x4f9ffc233d9a06e2220f7a3b492cbbaac0e24d31|0*18088*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/FullAdder.vhd|8
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/func=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [processor]
-A/behavioral=21|./../src/processor.vhd|17|1*120604
+A/behavioral=21|./../src/processor.vhd|17|1*52781
 I=0*10185
-I/behavioral=0*32890
+I/behavioral=0*10599
 M=11|0|va7|1417474085443|./../src/processor.vhd|0*9741*0x57c08a7d6da5ddc7d187ff9186e87aad25ced7f8|0*10103*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|va7|1417475099728|./../src/processor.vhd|0*32393*0xb2265fa7305793b065b2d29f64414b8b13324025|0*32794*0xb33770ff1c10522f9491560174ac8e6c
+M/behavioral=21|0|va7|1417474611293|./../src/processor.vhd|0*10350*0x66649df87e3f0f8da786813fff08370d587e3162|0*10503*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/processor.vhd|8
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [ram_256_byte]
-A/behavioral=21|./../src/ram_256_byte.vhd|14|1*126307
-BinI32/behavioral=3*15822
+A/behavioral=21|./../src/ram_256_byte.vhd|14|1*57747
+BinI32/behavioral=3*5617
 I=0*13474
 I/behavioral=0*14207
 M=11|0|va7|1417474085736|./../src/ram_256_byte.vhd|0*13023*0x574ce6985ac41c7fad742af2b3ec61314c070e4e|0*13386*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|va7|1417475099803|./../src/ram_256_byte.vhd|0*13649*0x8e0fb74ad98b84c23283b9207d15d50e03765f54|0*14105*0xb33770ff1c10522f9491560174ac8e6c
+M/behavioral=21|0|va7|1417474611393|./../src/ram_256_byte.vhd|0*13649*0x8e0fb74ad98b84c23283b9207d15d50e03765f54|0*14105*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/ram_256_byte.vhd|5
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [register_file_16x8]
-A/behavioral=21|./../src/register_file_16x8.vhd|17|1*123440
-BinI32/behavioral=3*15065
+A/behavioral=21|./../src/register_file_16x8.vhd|17|1*54880
+BinI32/behavioral=3*4860
 I=0*11745
 I/behavioral=0*12556
 M=11|0|va7|1417474085472|./../src/register_file_16x8.vhd|0*11163*0x8dacd17d51a07c9f9c443bdb515f7f59bd4747c9|0*11645*0xab32bc1a2daf049573e14469f634e0e6
-M/behavioral=21|0|va7|1417475099737|./../src/register_file_16x8.vhd|0*11919*0x36e982a63809dcc9b33e251a05d4da98147f5ca1|0*12442*0xb33770ff1c10522f9491560174ac8e6c
+M/behavioral=21|0|va7|1417474611299|./../src/register_file_16x8.vhd|0*11919*0x36e982a63809dcc9b33e251a05d4da98147f5ca1|0*12442*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/register_file_16x8.vhd|5
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/behavioral=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [subtractor16]
-A/subtract=21|./../src/subtractor16.vhd|15|1*139105
-BinI32/subtract=3*18139
+A/subtract=21|./../src/subtractor16.vhd|15|1*70545
+BinI32/subtract=3*7934
 I=0*21917
 I/subtract=0*22554
 M=11|0|va7|1417474611752|./../src/subtractor16.vhd|0*21522*0x235dcf74ee3c6dea28e97699fe477b810c73e6d7|0*21829*0xab32bc1a2daf049573e14469f634e0e6
-M/subtract=21|0|va7|1417475100145|./../src/subtractor16.vhd|0*22023*0xdb08f6ba008f0b7ba11d4b3ea22218c6572706cf|0*22454*0xb33770ff1c10522f9491560174ac8e6c
+M/subtract=21|0|va7|1417474611758|./../src/subtractor16.vhd|0*22023*0xdb08f6ba008f0b7ba11d4b3ea22218c6572706cf|0*22454*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/subtractor16.vhd|5
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/subtract=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [xorgate]
-A/func=21|./../src/half_adder.vhd|29|1*129545
-BinI32/func=3*16878
+A/func=21|./../src/half_adder.vhd|29|1*60985
+BinI32/func=3*6673
 I=0*15716
 I/func=0*16059
 M=11|0|va7|1417474611475|./../src/half_adder.vhd|0*15433*0x838a4f3dff4f7969310084a74e0a76ed72c558b1|0*15635*0xab32bc1a2daf049573e14469f634e0e6
-M/func=21|0|va7|1417475099898|./../src/half_adder.vhd|0*15817*0x0018223a2421080cf3852f0152c2d511be7c20c4|0*15970*0xb33770ff1c10522f9491560174ac8e6c
+M/func=21|0|va7|1417474611480|./../src/half_adder.vhd|0*15817*0x0018223a2421080cf3852f0152c2d511be7c20c4|0*15970*0xb33770ff1c10522f9491560174ac8e6c
 R=./../src/half_adder.vhd|23
 Version=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 Version/func=9.2.2499.sp1.36.4586  (Windows)|00000003789cd3f5370600015b00b0
 
 [~A]
-ModifyID=306
+ModifyID=167
 Version=73
 
 [~MFT]
-0=196|0Simple_Processor.mgf|32890|12507
-1=103|1Simple_Processor.mgf|146767|113299
-3=65|3Simple_Processor.mgf|19472|15065
+0=176|0Simple_Processor.mgf|28990|9203
+1=53|1Simple_Processor.mgf|78207|45476
+3=25|3Simple_Processor.mgf|9267|4860
 
 [~U]
 adder16=11|0*19781|
-alu=ALU 11|0*28990|
+alu=ALU 11|0*26111|
 andgate=andGate 11|0*14393|
 fulladder=FullAdder 11|0*18280|
 half_adder=11|0*16165|
