@@ -57,6 +57,10 @@ signal inst_value : std_logic_vector(7 downto 0);
 -- signals for register file
 signal regWrite : std_logic;
 signal regNewData : std_logic_vector(15 downto 0);
+--signals for ALU
+signal aluOutput : std_logic_vector(15 downto 0);
+signal C : std_logic_vector(15 downto 0);
+signal status : std_logic_vector(2 downto 0);
 
 begin
 --Get opCode from Instruction
@@ -69,39 +73,49 @@ end process;
 process(opCode)
 begin
 	case opCode is
-	  when "000" => --signed addition	R-type  
+	  when "000" => --signed addition	R-type
 	  	inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
+		regWrite <= '1';
 	  when "001" => --signed multiplication R-type
 	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
+		regWrite <= '1';
 	  when "010" => --passthrough A R-type
 	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
+		regWrite <= '1';
 	  when "011" =>  --passthrough B R-type
 	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
+		regWrite <= '1';
 	  when "100" => --signed subtraction R-type
 	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
+		regWrite <= '1';
 	  when "101" => --load immediate I-type
 	  	inst_dest <= instruction(11 downto 8);
-	 	inst_value <= instruction(7 downto 0); 
+	 	inst_value <= instruction(7 downto 0);
+		regWrite <= '1';
 	  when "110" => --store halfword I-type
 	  	inst_dest <= instruction(11 downto 8);
 	 	inst_value <= instruction(7 downto 0);
+		regWrite <= '0';
 	  when "111" => --load halfword I-type
 	  	inst_dest <= instruction(11 downto 8);
 	 	inst_value <= instruction(7 downto 0);
+		regWrite <= '1';
 	  when others =>  null;
 	end case;
 end process;
 
-reg_file: register_file_16x8 port map(regWrite,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB);
+reg_file: register_file_16x8 port map(regWrite,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB); 
+alu1: ALU port map(RA,RB, aluOutput,opCode(0),opCode(1),opCode(2),C,status);
+--regNewData from load or alu
 
 end behavioral;

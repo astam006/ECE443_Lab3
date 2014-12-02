@@ -1,3 +1,2 @@
 ram_256_byte ENTITY
 processor ENTITY
-ALU ENTITY
