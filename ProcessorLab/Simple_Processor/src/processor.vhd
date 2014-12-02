@@ -129,6 +129,21 @@ end process;
 reg_file: register_file_16x8 port map(regWrite,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB); 
 alu1: ALU port map(RA,RB, aluOutput,opCode(0),opCode(1),opCode(2),C,status);
 ram1: ram_256 port map(clk, (not regWrite), '1', inst_value, RA, ramOutput);
---regNewData from load or alu
+
+---Store new value into destination register from ALU
+process(aluOutput)
+begin
+	if (regWrite = '1')	then
+		regNewData <= aluOutput;
+	end if;
+end process;
+
+--Store new value into destination register from RAM
+process(ramOutput)
+begin
+	if (regWrite = '0')	then
+		regNewData <= ramOutput;
+	end if;
+end process;
 
 end behavioral;																	   
