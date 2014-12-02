@@ -38,7 +38,7 @@ Simple_Processor=.
 Active_lib=
 
 [Files]
-/ram_256_byte.vhd=-1
+/ram_256.vhd=-1
 /multiplier16.vhd=-1
 /register_file_16x8.vhd=-1
 /mux16.vhd=-1
@@ -50,7 +50,7 @@ Active_lib=
 /processor.vhd=-1
 
 [Files.Data]
-.\src\ram_256_byte.vhd=VHDL Source Code
+.\src\ram_256.vhd=VHDL Source Code
 .\src\multiplier16.vhd=VHDL Source Code
 .\src\register_file_16x8.vhd=VHDL Source Code
 .\src\mux16.vhd=VHDL Source Code

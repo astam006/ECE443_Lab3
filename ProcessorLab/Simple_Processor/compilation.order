@@ -1,4 +1,4 @@
-.\src\ram_256_byte.vhd
+.\src\ram_256.vhd
 .\src\multiplier16.vhd
 .\src\register_file_16x8.vhd
 .\src\mux16.vhd

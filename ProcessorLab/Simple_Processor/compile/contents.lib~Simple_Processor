@@ -1,4 +1,4 @@
-1250
+1393
 ~E 1 "./../src/adder16.vhd" 5 adder16
 ~A 1 "./../src/adder16.vhd" 16 func
 ~E 1 "./../src/ALU.vhd" 7 ALU
@@ -17,8 +17,10 @@
 ~A 1 "./../src/FullAdder.vhd" 14 func
 ~E 1 "./../src/processor.vhd" 8 processor
 ~A 1 "./../src/processor.vhd" 17 behavioral
+~E 1 "./../src/ram_256.vhd" 5 ram_256
+~A 1 "./../src/ram_256.vhd" 14 behavioral
 ~E 1 "./../src/ram_256_byte.vhd" 5 ram_256_byte
-~A 1 "./../src/ram_256_byte.vhd" 14 behavioral
+~A 1 "./../src/ram_256.vhd" 14 behavioral
 ~E 1 "./../src/register_file_16x8.vhd" 5 register_file_16x8
 ~A 1 "./../src/register_file_16x8.vhd" 17 behavioral
 ~E 1 "./../src/subtractor16.vhd" 5 subtractor16
