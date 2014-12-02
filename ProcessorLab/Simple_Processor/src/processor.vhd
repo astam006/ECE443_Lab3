@@ -39,21 +39,51 @@ component ALU is
 end component;
 
 signal opCode : std_logic_vector(2 downto 0);
+signal inst_a, inst_b, inst_c : std_logic_vector(3 downto 0);
+signal inst_d : std_logic_vector(3 downto 0);
+signal inst_value : std_logic_vector(7 downto 0);
 
-begin		  
+begin
+--Get opCode from Instruction
+process(instruction)
+begin
+	opCode <= instruction(14 downto 12);
+end process;
+
 -- Instruction Decoder
 process(opCode)
 begin
 	case opCode is
-	  when "000" =>   opCode <= "000"; --signed addition	R-type
-	  when "001" =>   opCode <= "000"; --signed multiplication R-type
-	  when "010" =>   opCode <= "000"; --passthrough A R-type
-	  when "011" =>   opCode <= "000"; --passthrough B R-type
-	  when "100" =>   opCode <= "000"; --signed subtraction R-type
-	  when "101" =>   opCode <= "000"; --load immediate I-type
-	  when "110" =>   opCode <= "000"; --store halfword I-type
-	  when "111" =>   opCode <= "000"; --load halfword I-type
-	  when others =>  opCode <= "000";
+	  when "000" => --signed addition	R-type  
+	  	inst_c <= instruction(11 downto 8);
+		inst_a <= instruction(7 downto 4);
+		inst_b <= instruction(3 downto 0);
+	  when "001" => --signed multiplication R-type
+	    inst_c <= instruction(11 downto 8);
+		inst_a <= instruction(7 downto 4);
+		inst_b <= instruction(3 downto 0);
+	  when "010" => --passthrough A R-type
+	    inst_c <= instruction(11 downto 8);
+		inst_a <= instruction(7 downto 4);
+		inst_b <= instruction(3 downto 0);
+	  when "011" =>  --passthrough B R-type
+	    inst_c <= instruction(11 downto 8);
+		inst_a <= instruction(7 downto 4);
+		inst_b <= instruction(3 downto 0);
+	  when "100" => --signed subtraction R-type
+	    inst_c <= instruction(11 downto 8);
+		inst_a <= instruction(7 downto 4);
+		inst_b <= instruction(3 downto 0);
+	  when "101" => --load immediate I-type
+	  	inst_d <= instruction(11 downto 8);
+	 	inst_value <= instruction(7 downto 0); 
+	  when "110" => --store halfword I-type
+	  	inst_d <= instruction(11 downto 8);
+	 	inst_value <= instruction(7 downto 0);
+	  when "111" => --load halfword I-type
+	  	inst_d <= instruction(11 downto 8);
+	 	inst_value <= instruction(7 downto 0);
+	  when others =>  null;
 	end case;
 end process;
 
