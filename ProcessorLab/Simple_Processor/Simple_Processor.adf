@@ -38,26 +38,26 @@ Simple_Processor=.
 Active_lib=
 
 [Files]
-/processor.vhd=-1
-/register_file_16x8.vhd=-1
 /ram_256_byte.vhd=-1
 /half_adder.vhd=-1
+/register_file_16x8.vhd=-1
+/mux16.vhd=-1
+/multiplier16.vhd=-1
 /FullAdder.vhd=-1
 /adder16.vhd=-1
 /subtractor16.vhd=-1
-/multiplier16.vhd=-1
-/mux16.vhd=-1
+/processor.vhd=-1
 /ALU.vhd=-1
 
 [Files.Data]
-.\src\processor.vhd=VHDL Source Code
-.\src\register_file_16x8.vhd=VHDL Source Code
 .\src\ram_256_byte.vhd=VHDL Source Code
 .\src\half_adder.vhd=VHDL Source Code
+.\src\register_file_16x8.vhd=VHDL Source Code
+.\src\mux16.vhd=VHDL Source Code
+.\src\multiplier16.vhd=VHDL Source Code
 .\src\FullAdder.vhd=VHDL Source Code
 .\src\adder16.vhd=VHDL Source Code
 .\src\subtractor16.vhd=VHDL Source Code
-.\src\multiplier16.vhd=VHDL Source Code
-.\src\mux16.vhd=VHDL Source Code
+.\src\processor.vhd=VHDL Source Code
 .\src\ALU.vhd=VHDL Source Code
 

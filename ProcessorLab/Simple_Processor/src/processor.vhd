@@ -38,10 +38,25 @@ component ALU is
 		 status : 	out std_logic_vector(2 downto 0));        -- Status output signal
 end component;
 
+component register_file_16x8 is
+    port (
+        RegWrite:       in  std_logic;
+        WriteRegNum:    in  std_logic_vector (2 downto 0);
+        WriteData:      in  std_logic_vector (15 downto 0);
+        ReadRegNumA:    in  std_logic_vector (2 downto 0);
+        ReadRegNumB:    in  std_logic_vector (2 downto 0);
+        PortA:          out std_logic_vector (15 downto 0);
+        PortB:          out std_logic_vector (15 downto 0)
+    );
+end component;
+-- signals for instruction decoding
 signal opCode : std_logic_vector(2 downto 0);
-signal inst_a, inst_b, inst_c : std_logic_vector(3 downto 0);
-signal inst_d : std_logic_vector(3 downto 0);
+signal inst_a, inst_b: std_logic_vector(3 downto 0);
+signal inst_dest : std_logic_vector(3 downto 0);
 signal inst_value : std_logic_vector(7 downto 0);
+-- signals for register file
+signal regWrite : std_logic;
+signal regNewData : std_logic_vector(15 downto 0);
 
 begin
 --Get opCode from Instruction
@@ -55,38 +70,38 @@ process(opCode)
 begin
 	case opCode is
 	  when "000" => --signed addition	R-type  
-	  	inst_c <= instruction(11 downto 8);
+	  	inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
 	  when "001" => --signed multiplication R-type
-	    inst_c <= instruction(11 downto 8);
+	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
 	  when "010" => --passthrough A R-type
-	    inst_c <= instruction(11 downto 8);
+	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
 	  when "011" =>  --passthrough B R-type
-	    inst_c <= instruction(11 downto 8);
+	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
 	  when "100" => --signed subtraction R-type
-	    inst_c <= instruction(11 downto 8);
+	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
 	  when "101" => --load immediate I-type
-	  	inst_d <= instruction(11 downto 8);
+	  	inst_dest <= instruction(11 downto 8);
 	 	inst_value <= instruction(7 downto 0); 
 	  when "110" => --store halfword I-type
-	  	inst_d <= instruction(11 downto 8);
+	  	inst_dest <= instruction(11 downto 8);
 	 	inst_value <= instruction(7 downto 0);
 	  when "111" => --load halfword I-type
-	  	inst_d <= instruction(11 downto 8);
+	  	inst_dest <= instruction(11 downto 8);
 	 	inst_value <= instruction(7 downto 0);
 	  when others =>  null;
 	end case;
 end process;
 
--- PUT YOUR CODE HERE
+reg_file: register_file_16x8 port map(regWrite,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB);
 
 end behavioral;

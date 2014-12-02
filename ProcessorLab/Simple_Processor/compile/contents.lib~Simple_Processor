@@ -1,4 +1,4 @@
-742
+820
 ~E 1 "./../src/adder16.vhd" 5 adder16
 ~A 1 "./../src/adder16.vhd" 16 func
 ~E 1 "./../src/ALU.vhd" 7 ALU
