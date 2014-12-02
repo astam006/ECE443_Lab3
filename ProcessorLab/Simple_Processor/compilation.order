@@ -8,3 +8,4 @@
 .\src\subtractor16.vhd
 .\src\ALU.vhd
 .\src\processor.vhd
+.\src\TestBench\processor_TB.vhd

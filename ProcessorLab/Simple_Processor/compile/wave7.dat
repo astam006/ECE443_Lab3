@@ -1,0 +1,133 @@
+$WAVE4TIMED
+$RESOLUTION 1000
+I 1 "a#29#STD_LOGIC_VECTOR(15 downto 0)1 ricd15 0 c#9#STD_LOGICc9 UX01ZWLH-"
+I 2 "c#9#STD_LOGICc9 UX01ZWLH-"
+$BUS S 17 1 16 "/processor_tb/instruction"
+$SC 1-16
+$S +2 2 14 0 clk
+$BUS S 35 1 16 14 0 RA
+$SC 19-34
+$BUS S 52 1 16 15 0 B
+$SC 36-51
+$BUS S 69 1 16 15 0 C
+$SC 53-68
+$BUS S 86 1 16 14 0 "UUT/reg_file/register_file(0)"
+$SC 70-85
+$BUS S +18 1 16 41 1 "1"
+$SC 87-+15
+$BUS S +18 1 16 41 1 "2"
+$SC 104-+15
+$BUS S +18 1 16 41 1 "3"
+$SC 121-+15
+$BUS S +18 1 16 41 1 "4"
+$SC 138-+15
+$BUS S +18 1 16 41 1 "5"
+$SC 155-+15
+$BUS S +18 1 16 41 1 "6"
+$SC 172-+15
+$BUS S +18 1 16 41 1 "7"
+$SC 189-+15
+$BUS S +18 1 16 14 0 R0
+$SC 206-+15
+$BUS S +18 1 16 15 0 "1"
+$SC 223-+15
+$BUS S +18 1 16 15 0 "2"
+$SC 240-+15
+$BUS S +18 1 16 15 0 "3"
+$SC 257-+15
+$BUS S +18 1 16 15 0 "4"
+$SC 274-+15
+$BUS S +18 1 16 15 0 "5"
+$SC 291-+15
+$BUS S +18 1 16 15 0 "6"
+$SC 308-+15
+$BUS S +18 1 16 15 0 "7"
+$SC 325-+15
+$ENDTIME 1000000000
+$WAVES 3
+=0 T 0
+=1 D 0 1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 4
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES +6
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +3
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +1
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES +1
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 1 12
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES 2 13
+*0
+*1
+$VALUES
+V 2
+U
+1
+$END
+$WAVES 5-9
+*0
+*1
+$VALUES
+V 2
+U
+0
+$END
+$WAVES +9-34 +2-51 +2-68 +2-85 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15 +2-+15
+*0
+$VALUES
+V 1
+U
+$END
+$ENDWAVE

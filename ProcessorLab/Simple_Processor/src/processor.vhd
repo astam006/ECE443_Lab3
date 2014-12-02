@@ -135,6 +135,18 @@ process(aluOutput)
 begin
 	if (regWrite = '1')	then
 		regNewData <= aluOutput;
+		-- Assigning register file data value to appropriate register debug signal.
+		case inst_dest is
+			when "0000" => R0 <= aluOutput;
+			when "0001" => R1 <= aluOutput;
+			when "0010" => R2 <= aluOutput;
+			when "0011" => R3 <= aluOutput;
+			when "0100" => R4 <= aluOutput;
+			when "0101" => R5 <= aluOutput;
+			when "0110" => R6 <= aluOutput;
+			when "0111" => R7 <= aluOutput;
+			when others => null;
+		end case;
 	end if;
 end process;
 
@@ -143,7 +155,21 @@ process(ramOutput)
 begin
 	if (regWrite = '0')	then
 		regNewData <= ramOutput;
+		-- Assigning register file data value to appropriate register debug signal.
+		case inst_a is
+			when "0000" => R0 <= ramOutput;
+			when "0001" => R1 <= ramOutput;
+			when "0010" => R2 <= ramOutput;
+			when "0011" => R3 <= ramOutput;
+			when "0100" => R4 <= ramOutput;
+			when "0101" => R5 <= ramOutput;
+			when "0110" => R6 <= ramOutput;
+			when "0111" => R7 <= ramOutput;
+			when others => null;
+		end case;
 	end if;
 end process;
+
+
 
 end behavioral;																	   
