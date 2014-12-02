@@ -49,6 +49,16 @@ component register_file_16x8 is
         PortB:          out std_logic_vector (15 downto 0)
     );
 end component;
+
+component ram_256_byte is
+	port ( 
+		clock, rw, cs: in std_logic;
+		address: in std_logic_vector(7 downto 0);
+		DataIn: in std_logic_vector(15 downto 0);
+		DataOut: out std_logic_vector(15 downto 0)
+	);
+end component ram_256_byte;
+
 -- signals for instruction decoding
 signal opCode : std_logic_vector(2 downto 0);
 signal inst_a, inst_b: std_logic_vector(3 downto 0);
@@ -61,6 +71,8 @@ signal regNewData : std_logic_vector(15 downto 0);
 signal aluOutput : std_logic_vector(15 downto 0);
 signal C : std_logic_vector(15 downto 0);
 signal status : std_logic_vector(2 downto 0);
+--signals for RAM
+signal ramOutput : std_logic_vector(15 downto 0);
 
 begin
 --Get opCode from Instruction
@@ -103,7 +115,7 @@ begin
 	 	inst_value <= instruction(7 downto 0);
 		regWrite <= '1';
 	  when "110" => --store halfword I-type
-	  	inst_dest <= instruction(11 downto 8);
+	  	inst_a <= instruction(11 downto 8);
 	 	inst_value <= instruction(7 downto 0);
 		regWrite <= '0';
 	  when "111" => --load halfword I-type
@@ -116,6 +128,7 @@ end process;
 
 reg_file: register_file_16x8 port map(regWrite,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB); 
 alu1: ALU port map(RA,RB, aluOutput,opCode(0),opCode(1),opCode(2),C,status);
+ram1: ram_256_byte port map(clk, (not regWrite), '1', inst_value, RA, ramOutput);
 --regNewData from load or alu
 
-end behavioral;
+end behavioral;																	   

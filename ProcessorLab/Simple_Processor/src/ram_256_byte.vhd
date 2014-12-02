@@ -6,13 +6,13 @@ entity ram_256_byte is
 	port ( 
 		clock, rw, cs: in std_logic;
 		address: in std_logic_vector(7 downto 0);
-		DataIn: in std_logic_vector(7 downto 0);
-		DataOut: out std_logic_vector(7 downto 0)
+		DataIn: in std_logic_vector(15 downto 0);
+		DataOut: out std_logic_vector(15 downto 0)
 	);
 end ram_256_byte;
 
 architecture behavioral of ram_256_byte is
-type ram_array is array(0 to 255) of std_logic_vector(7 downto 0);
+type ram_array is array(0 to 255) of std_logic_vector(15 downto 0);
 signal ram : ram_array;
 begin
 	process(clock,rw,cs)
@@ -26,7 +26,7 @@ begin
 				end if;
 			end if;
 		else
-			DataOut <= "ZZZZZZZZ";
+			DataOut <= "ZZZZZZZZZZZZZZZZ";
 		end if;
 	end process;
 end architecture behavioral;

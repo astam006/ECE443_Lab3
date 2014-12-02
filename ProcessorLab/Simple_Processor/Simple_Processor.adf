@@ -5,7 +5,7 @@ version=3
 Current Config=compile
 
 [Configurations]
-compile=Simple_Processor
+compile=simple_processor
 
 [Library]
 Simple_Processor=.\Simple_Processor\Simple_Processor.lib

@@ -1,9 +1,42 @@
-Active-HDL 9.2.2499.sp1.36.4586  2014-12-01 17:47:52
+Active-HDL 9.3.2744.sp1.09.4995  2014-12-02 15:20:34
 
 Elaboration top modules:
+Architecture                  behavioral(processor)
 
 
-----------------------------------------------------------------------------------
-Library                 | Comment
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+Entity             | Architecture | Library          | Info | Compiler Version                | Compilation Options
+--------------------------------------------------------------------------------------------------------------------
+processor          | behavioral   | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+register_file_16x8 | behavioral   | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+ALU                | alu_arc      | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+ram_256_byte       | behavioral   | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+adder16            | func         | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+subtractor16       | subtract     | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+multiplier16       | multiply     | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+mux16              | mux          | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+FullAdder          | func         | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+half_adder         | adder        | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+orGate             | func         | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+xorGate            | func         | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+andGate            | func         | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+VHDL Package                      | Library          | Info | Compiler Version                | Compilation Options
+--------------------------------------------------------------------------------------------------------------------
+standard                          | std              |      |                                 | 
+TEXTIO                            | std              |      | 9.3.2744.sp1.09.4995  (Windows) |  -2008
+std_logic_1164                    | ieee             |      | 9.3.2744.sp1.09.4995  (Windows) |  -2008
+std_logic_arith                   | ieee             |      | 9.3.2744.sp1.09.4995  (Windows) | 
+STD_LOGIC_UNSIGNED                | ieee             |      | 9.3.2744.sp1.09.4995  (Windows) | 
+NUMERIC_STD                       | ieee             |      | 9.3.2744.sp1.09.4995  (Windows) |  -2008
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+Library                           | Comment
+--------------------------------------------------------------------------------------------------------------------
+ieee                              | Standard IEEE packages library
+simple_processor                  | None
+std                               | Standard VHDL library
+--------------------------------------------------------------------------------------------------------------------
