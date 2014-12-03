@@ -1,3 +1,1 @@
-ram_256 ENTITY
 TESTBENCH_FOR_processor CONFIGURATION
-processor_tb ENTITY

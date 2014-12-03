@@ -5,7 +5,7 @@ use ieee.std_logic_unsigned.all;
 entity ram_256 is
 	port ( 
 		clock, rw, cs: in std_logic;
-		address: in std_logic_vector(7 downto 0);
+		address: in std_logic_vector(15 downto 0);
 		DataIn: in std_logic_vector(15 downto 0);
 		DataOut: out std_logic_vector(15 downto 0)
 	);

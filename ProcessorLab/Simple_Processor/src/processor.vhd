@@ -48,7 +48,7 @@ end component;
 component ram_256 is
 	port ( 
 		clock, rw, cs: in std_logic;
-		address: in std_logic_vector(7 downto 0);
+		address: in std_logic_vector(15 downto 0);
 		DataIn: in std_logic_vector(15 downto 0);
 		DataOut: out std_logic_vector(15 downto 0)
 	);
@@ -124,9 +124,10 @@ begin
 		aluSrc <= '1';
 		memToReg <= '0';
 	  when "110" => --store halfword I-type
-	  	inst_a <= instruction(11 downto 8);
+	  	inst_b <= instruction(11 downto 8);
 	 	inst_value <= std_logic_vector(resize(signed(instruction(7 downto 0)), 16));
 		regWrite <= '0';
+		aluSrc <= '0';
 	  when "111" => --load halfword I-type
 	  	inst_dest <= instruction(11 downto 8);
 	 	inst_value <= std_logic_vector(resize(signed(instruction(7 downto 0)), 16));
@@ -138,7 +139,7 @@ end process;
 -- Port mapping components to processor signals
 reg_file: register_file_16x8 port map(regWrite,clk,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB); 
 alu1: ALU port map(RA,aluSrcOutput, aluOutput,opCode(2),opCode(1),opCode(0),C,status);
---ram1: ram_256 port map(clk, (not regWrite), '1', inst_value, RA, ramOutput);
+ram1: ram_256 port map(clk, (not regWrite), '1', inst_value, aluOutput, ramOutput);
 muxAluSrc: mux2 port map(RB,inst_value,aluSrc,aluSrcOutput);
 muxMemToReg: mux2 port map(aluOutput,x"0000",memToReg,regNewData);
 
