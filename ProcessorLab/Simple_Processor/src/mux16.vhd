@@ -33,7 +33,7 @@ begin
 		elsif(S="100") then
 			Y <= D;					--Multiplication
 		elsif(S="101") then
-			Y <= F;					--Undefined
+			Y <= B;					--Pass through B
 		elsif(S="110") then
 			Y <= B;					--Pass through B
 		elsif(S="111") then

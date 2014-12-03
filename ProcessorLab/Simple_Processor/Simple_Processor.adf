@@ -37,10 +37,14 @@ CompileWithDebug=0
 Simple_Processor=.
 Active_lib=
 
+[Groups]
+TestBench=1
+
 [Files]
 /ram_256.vhd=-1
 /multiplier16.vhd=-1
 /register_file_16x8.vhd=-1
+/mux2.vhd=-1
 /mux16.vhd=-1
 /half_adder.vhd=-1
 /FullAdder.vhd=-1
@@ -55,6 +59,7 @@ TestBench/processor_TB_runtest.do=-1
 .\src\ram_256.vhd=VHDL Source Code
 .\src\multiplier16.vhd=VHDL Source Code
 .\src\register_file_16x8.vhd=VHDL Source Code
+.\src\mux2.vhd=VHDL Source Code
 .\src\mux16.vhd=VHDL Source Code
 .\src\half_adder.vhd=VHDL Source Code
 .\src\FullAdder.vhd=VHDL Source Code
@@ -65,5 +70,3 @@ TestBench/processor_TB_runtest.do=-1
 .\src\TestBench\processor_TB.vhd=VHDL Test Bench
 .\src\TestBench\processor_TB_runtest.do=Macro
 
-[Groups]
-TestBench=1

@@ -30,7 +30,7 @@ architecture TB_ARCHITECTURE of processor_tb is
 	signal instruction : STD_LOGIC_VECTOR(15 downto 0);
 	signal clk : STD_LOGIC;
 	-- Observed signals - signals mapped to the output ports of tested entity
-	signal R0 : STD_LOGIC_VECTOR(15 downto 0) := x"0000";
+	signal R0 : STD_LOGIC_VECTOR(15 downto 0);
 	signal R1 : STD_LOGIC_VECTOR(15 downto 0);
 	signal R2 : STD_LOGIC_VECTOR(15 downto 0);
 	signal R3 : STD_LOGIC_VECTOR(15 downto 0);
@@ -42,7 +42,7 @@ architecture TB_ARCHITECTURE of processor_tb is
 	signal RB : STD_LOGIC_VECTOR(15 downto 0);
 	signal RC : STD_LOGIC_VECTOR(15 downto 0);
 
-	-- Add your code here ... 
+	-- Add your code here ...
 
 begin
 
@@ -65,10 +65,19 @@ begin
 		);
 
 	-- Add your stimulus here ...
-	INSTR_PROCESS: process
+	process
 	begin
-		instruction <= x"500A";	
-		wait for 1ms;
+		clk <= '1';
+		wait for 20ns;
+		clk <= '0';
+		wait for 20ns;
+	end process;
+	
+	process(clk)
+	begin
+		if(rising_edge(clk)) then
+			instruction <= x"500A";
+		end if;
 	end process;
 
 end TB_ARCHITECTURE;

@@ -8,4 +8,5 @@ i<>.\src\subtractor16.vhd
 i<>.\src\multiplier16.vhd
 i<>.\src\mux16.vhd
 i<>.\src\ALU.vhd
+i<>.\src\mux2.vhd
 i<>.\src\TestBench\processor_TB.vhd

@@ -1,4 +1,4 @@
-2445
+5163
 ~E 1 "./../src/adder16.vhd" 5 adder16
 ~A 1 "./../src/adder16.vhd" 16 func
 ~E 1 "./../src/ALU.vhd" 7 ALU
@@ -13,10 +13,12 @@
 ~A 1 "./../src/multiplier16.vhd" 21 multiply
 ~E 1 "./../src/mux16.vhd" 6 mux16
 ~A 1 "./../src/mux16.vhd" 21 mux
+~E 1 "./../src/mux2.vhd" 4 mux2
+~A 1 "./../src/mux2.vhd" 13 behavioral
 ~E 1 "./../src/FullAdder.vhd" 8 orGate
 ~A 1 "./../src/FullAdder.vhd" 14 func
 ~E 1 "./../src/processor.vhd" 8 processor
-~A 1 "./../src/processor.vhd" 17 behavioral
+~A 1 "./../src/processor.vhd" 14 behavioral
 ~E 1 "./../src/TestBench/processor_TB.vhd" 7 processor_tb
 ~A 1 "./../src/TestBench/processor_TB.vhd" 10 TB_ARCHITECTURE
 ~E 1 "./../src/ram_256.vhd" 5 ram_256
@@ -27,6 +29,6 @@
 ~A 1 "./../src/register_file_16x8.vhd" 17 behavioral
 ~E 1 "./../src/subtractor16.vhd" 5 subtractor16
 ~A 1 "./../src/subtractor16.vhd" 15 subtract
-~C 1 "./../src/TestBench/processor_TB.vhd" 76 testbench_for_processor
+~C 1 "./../src/TestBench/processor_TB.vhd" 85 testbench_for_processor
 ~E 1 "./../src/half_adder.vhd" 23 xorGate
 ~A 1 "./../src/half_adder.vhd" 29 func

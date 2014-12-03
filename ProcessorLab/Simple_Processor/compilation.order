@@ -1,6 +1,7 @@
 .\src\ram_256.vhd
 .\src\multiplier16.vhd
 .\src\register_file_16x8.vhd
+.\src\mux2.vhd
 .\src\mux16.vhd
 .\src\half_adder.vhd
 .\src\FullAdder.vhd
