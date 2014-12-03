@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity register_file_16x8 is
     port (
-        RegWrite:       in  std_logic;
+        RegWrite, Clk:  in  std_logic;
         WriteRegNum:    in  std_logic_vector (2 downto 0);
         WriteData:      in  std_logic_vector (15 downto 0);
         ReadRegNumA:    in  std_logic_vector (2 downto 0);
@@ -20,7 +20,7 @@ architecture behavioral of register_file_16x8 is
     signal register_file: register_array;
 
     begin 
-    process(WriteData)
+    process(Clk)
     begin 
         if RegWrite='1' then
             register_file(to_integer(unsigned(WriteRegNum))) <= WriteData;

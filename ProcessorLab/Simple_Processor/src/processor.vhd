@@ -35,7 +35,7 @@ end component;
 
 component register_file_16x8 is
     port (
-        RegWrite:       in  std_logic;
+        RegWrite, Clk:  in  std_logic;
         WriteRegNum:    in  std_logic_vector (2 downto 0);
         WriteData:      in  std_logic_vector (15 downto 0);
         ReadRegNumA:    in  std_logic_vector (2 downto 0);
@@ -83,7 +83,7 @@ begin
 end process;
 
 -- Instruction Decoder
-process(opCode)
+process(opCode, instruction)
 begin
 	case opCode is
 	  when "000" => --signed addition	R-type
@@ -130,7 +130,7 @@ begin
 end process;
 
 -- Port mapping components to processor signals
-reg_file: register_file_16x8 port map(regWrite,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB); 
+reg_file: register_file_16x8 port map(regWrite,clk,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB); 
 alu1: ALU port map(RA,aluSrcOutput, aluOutput,opCode(0),opCode(1),opCode(2),C,status);
 --ram1: ram_256 port map(clk, (not regWrite), '1', inst_value, RA, ramOutput);
 muxAluSrc: mux2 port map(RB,inst_value,aluSrc,aluSrcOutput);

@@ -43,6 +43,7 @@ architecture TB_ARCHITECTURE of processor_tb is
 	signal RC : STD_LOGIC_VECTOR(15 downto 0);
 
 	-- Add your code here ...
+	signal newInstruction : std_logic_vector(15 downto 0);
 
 begin
 
@@ -65,19 +66,42 @@ begin
 		);
 
 	-- Add your stimulus here ...
+	
+	
 	process
 	begin
 		clk <= '1';
-		wait for 20ns;
+		wait for 80ns;
 		clk <= '0';
-		wait for 20ns;
+		wait for 80ns;
 	end process;
 	
 	process(clk)
 	begin
-		if(rising_edge(clk)) then
-			instruction <= x"500A";
+		if(falling_edge(clk)) then
+			instruction <= newInstruction;
 		end if;
+	end process;
+	
+	process
+	begin
+		--wait for 150ns;
+		newInstruction <= x"500A";
+		wait for 160ns;
+		newInstruction <= x"5105";
+		wait for 160ns;
+		newInstruction <= x"5200";
+		wait for 160ns;
+		newInstruction <= x"5300";
+		wait for 160ns;
+		newInstruction <= x"5400";
+		wait for 160ns;
+		newInstruction <= x"5500";
+		wait for 160ns;
+		newInstruction <= x"5600";
+		wait for 160ns;
+		newInstruction <= x"5700";
+		wait for 160ns;
 	end process;
 
 end TB_ARCHITECTURE;
