@@ -20,9 +20,9 @@ architecture behavioral of register_file_16x8 is
     signal register_file: register_array;
 
     begin 
-    process(RegWrite)
+    process(WriteData)
     begin 
-        if rising_edge(RegWrite) then
+        if RegWrite='1' then
             register_file(to_integer(unsigned(WriteRegNum))) <= WriteData;
         end if;
     end process;
