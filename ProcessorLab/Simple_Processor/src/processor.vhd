@@ -90,11 +90,15 @@ begin
 	  	inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
+		aluSrc <= '0';
+		memToReg <= '0';
 		regWrite <= '1';
 	  when "001" => --signed multiplication R-type
 	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
+		aluSrc <= '0';
+		memToReg <= '0';
 		regWrite <= '1';
 	  when "010" => --passthrough A R-type
 	    inst_dest <= instruction(11 downto 8);
@@ -110,6 +114,8 @@ begin
 	    inst_dest <= instruction(11 downto 8);
 		inst_a <= instruction(7 downto 4);
 		inst_b <= instruction(3 downto 0);
+		aluSrc <= '0';
+		memToReg <= '0';
 		regWrite <= '1';
 	  when "101" => --load immediate I-type
 	  	inst_dest <= instruction(11 downto 8);
@@ -131,7 +137,7 @@ end process;
 
 -- Port mapping components to processor signals
 reg_file: register_file_16x8 port map(regWrite,clk,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB); 
-alu1: ALU port map(RA,aluSrcOutput, aluOutput,opCode(0),opCode(1),opCode(2),C,status);
+alu1: ALU port map(RA,aluSrcOutput, aluOutput,opCode(2),opCode(1),opCode(0),C,status);
 --ram1: ram_256 port map(clk, (not regWrite), '1', inst_value, RA, ramOutput);
 muxAluSrc: mux2 port map(RB,inst_value,aluSrc,aluSrcOutput);
 muxMemToReg: mux2 port map(aluOutput,x"0000",memToReg,regNewData);

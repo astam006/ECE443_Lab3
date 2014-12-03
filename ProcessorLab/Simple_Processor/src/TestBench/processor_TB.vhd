@@ -71,9 +71,9 @@ begin
 	process
 	begin
 		clk <= '1';
-		wait for 80ns;
+		wait for 250ns;
 		clk <= '0';
-		wait for 80ns;
+		wait for 250ns;
 	end process;
 	
 	process(clk)
@@ -87,21 +87,27 @@ begin
 	begin
 		--wait for 150ns;
 		newInstruction <= x"500A";
-		wait for 160ns;
+		wait for 500ns;
 		newInstruction <= x"5105";
-		wait for 160ns;
+		wait for 500ns;
 		newInstruction <= x"5200";
-		wait for 160ns;
+		wait for 500ns;
 		newInstruction <= x"5300";
-		wait for 160ns;
+		wait for 500ns;
 		newInstruction <= x"5400";
-		wait for 160ns;
+		wait for 500ns;
 		newInstruction <= x"5500";
-		wait for 160ns;
+		wait for 500ns;
 		newInstruction <= x"5600";
-		wait for 160ns;
+		wait for 500ns;
 		newInstruction <= x"5700";
-		wait for 160ns;
+		wait for 500ns;
+		newInstruction <= x"0201";
+		wait for 500ns;	  
+		newInstruction <= x"1301";
+		wait for 500ns;
+		newInstruction <= x"4401";
+		wait for 500ns;
 	end process;
 
 end TB_ARCHITECTURE;
