@@ -55,6 +55,12 @@ TestBench=1
 /processor.vhd=-1
 TestBench/processor_TB.vhd=-1
 TestBench/processor_TB_runtest.do=-1
+TestBench/register_file_16x8_TB.vhd=-1
+TestBench/register_file_16x8_TB_runtest.do=-1
+TestBench/inst_decoder_TB.vhd=-1
+TestBench/inst_decoder_TB_runtest.do=-1
+TestBench/ram_256_TB.vhd=-1
+TestBench/ram_256_TB_runtest.do=-1
 
 [Files.Data]
 .\src\mux16.vhd=VHDL Source Code
@@ -69,6 +75,18 @@ TestBench/processor_TB_runtest.do=-1
 .\src\subtractor16.vhd=VHDL Source Code
 .\src\ALU.vhd=VHDL Source Code
 .\src\processor.vhd=VHDL Source Code
+
 .\src\TestBench\processor_TB.vhd=VHDL Test Bench
 .\src\TestBench\processor_TB_runtest.do=Macro
-
+.\src\TestBench\register_file_16x8_TB.vhd=VHDL Test Bench
+.\src\TestBench\register_file_16x8_TB_runtest.do=Macro
+.\src\TestBench\inst_decoder_TB.vhd=VHDL Test Bench
+.\src\TestBench\inst_decoder_TB_runtest.do=Macro
+.\src\TestBench\ram_256_TB.vhd=VHDL Test Bench
+.\src\TestBench\ram_256_TB_runtest.do=Macro
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=processor|behavioral|0 
+ShowHide=ShowTopLevel
+Selected=

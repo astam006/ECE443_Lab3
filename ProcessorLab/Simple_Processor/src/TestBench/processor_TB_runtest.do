@@ -1,4 +1,15 @@
 SetActiveLib -work
+comp -include "$dsn\src\half_adder.vhd" 
+comp -include "$dsn\src\FullAdder.vhd" 
+comp -include "$dsn\src\adder16.vhd" 
+comp -include "$dsn\src\mux16.vhd" 
+comp -include "$dsn\src\multiplier16.vhd" 
+comp -include "$dsn\src\subtractor16.vhd" 
+comp -include "$dsn\src\mux2.vhd" 
+comp -include "$dsn\src\ram_256.vhd" 
+comp -include "$dsn\src\ALU.vhd" 
+comp -include "$dsn\src\register_file_16x8.vhd" 
+comp -include "$dsn\src\instruction_decoder.vhd" 
 comp -include "$dsn\src\processor.vhd" 
 comp -include "$dsn\src\TestBench\processor_TB.vhd" 
 asim +access +r TESTBENCH_FOR_processor 

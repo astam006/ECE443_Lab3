@@ -11,3 +11,6 @@
 .\src\ALU.vhd
 .\src\processor.vhd
 .\src\TestBench\processor_TB.vhd
+.\src\TestBench\register_file_16x8_TB.vhd
+.\src\TestBench\inst_decoder_TB.vhd
+.\src\TestBench\ram_256_TB.vhd

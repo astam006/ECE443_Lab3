@@ -9,5 +9,8 @@ i<>.\src\multiplier16.vhd
 i<>.\src\mux16.vhd
 i<>.\src\ALU.vhd
 i<>.\src\mux2.vhd
-i<>.\src\TestBench\processor_TB.vhd
 i<>.\src\instruction_decoder.vhd
+i<>.\src\TestBench\processor_TB.vhd
+i<>.\src\TestBench\register_file_16x8_TB.vhd
+i<>.\src\TestBench\inst_decoder_TB.vhd
+i<>.\src\TestBench\ram_256_TB.vhd
