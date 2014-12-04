@@ -21,12 +21,9 @@ begin
 			if (rising_edge(clock)) then
 				if(rw='1') then
 					ram(conv_integer(address))<= DataIn;
-				else				  
-					DataOut <= ram(conv_integer(address));
-				end if;
+				end if;				  
 			end if;
-		else
-			DataOut <= "ZZZZZZZZZZZZZZZZ";
 		end if;
 	end process;
+	DataOut <= ram(conv_integer(address));
 end architecture behavioral;
