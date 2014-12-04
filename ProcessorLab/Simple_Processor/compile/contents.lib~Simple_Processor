@@ -1,4 +1,4 @@
-11858
+14074
 ~E 1 "./../src/adder16.vhd" 5 adder16
 ~A 1 "./../src/adder16.vhd" 16 func
 ~E 1 "./../src/ALU.vhd" 7 ALU
@@ -31,6 +31,6 @@
 ~A 1 "./../src/register_file_16x8.vhd" 17 behavioral
 ~E 1 "./../src/subtractor16.vhd" 5 subtractor16
 ~A 1 "./../src/subtractor16.vhd" 15 subtract
-~C 1 "./../src/TestBench/processor_TB.vhd" 99 testbench_for_processor
+~C 1 "./../src/TestBench/processor_TB.vhd" 113 testbench_for_processor
 ~E 1 "./../src/half_adder.vhd" 23 xorGate
 ~A 1 "./../src/half_adder.vhd" 29 func

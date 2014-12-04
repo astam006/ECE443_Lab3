@@ -20,7 +20,7 @@ component inst_decoder is
 		B: out std_logic_vector(2 downto 0);
 		D: out std_logic_vector(2 downto 0);
 		V: out std_logic_vector(15 downto 0);
-		aluSrc, regWrite, memToReg, cs: out std_logic
+		aluSrc, regWrite, memToReg, cs, rw: out std_logic
 	);
 end component;
 
@@ -73,6 +73,7 @@ signal inst_value : std_logic_vector(15 downto 0):= x"0000";
 signal regWrite : std_logic := '0';
 signal memToReg : std_logic := '0';
 signal aluSrc : std_logic := '0';
+signal rw : std_logic := '0';
 -- signals for register file
 signal regNewData : std_logic_vector(15 downto 0) := x"0000";
 --signals for ALU
@@ -88,10 +89,10 @@ begin
  
 
 -- Port mapping components to processor signals
-id: inst_decoder port map(instruction, inst_a, inst_b, inst_dest, inst_value, aluSrc, regWrite, memToReg, chipSelect);
+id: inst_decoder port map(instruction, inst_a, inst_b, inst_dest, inst_value, aluSrc, regWrite, memToReg, chipSelect, rw);
 reg_file: register_file_16x8 port map(regWrite,clk,inst_dest,regNewData,inst_a,inst_b,RA,RB); 
 alu1: ALU port map(RA,aluSrcOutput, aluOutput,instruction(14),instruction(13),instruction(12),C,status);
-ram1: ram_256 port map(clk, (not regWrite), chipSelect, aluOutput, RB, ramOutput);
+ram1: ram_256 port map(clk, rw, chipSelect, aluOutput, RB, ramOutput);
 muxAluSrc: mux2 port map(RB,inst_value,aluSrc,aluSrcOutput);
 muxMemToReg: mux2 port map(aluOutput,ramOutput,memToReg,regNewData);
 

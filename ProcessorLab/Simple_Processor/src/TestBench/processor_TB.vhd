@@ -92,6 +92,20 @@ begin
 		wait for 500ns;
 		instruction <= x"5700";
 		wait for 500ns;
+		instruction <= x"0201";
+		wait for 500ns;
+		instruction <= x"1301";
+		wait for 500ns;
+		instruction <= x"4401";
+		wait for 500ns;
+		instruction <= x"630B";
+		wait for 500ns;
+		instruction <= x"640A";
+		wait for 500ns;
+		instruction <= x"760A";
+		wait for 500ns;
+		instruction <= x"770B";
+		wait for 500ns;
 	end process;
 
 end TB_ARCHITECTURE;

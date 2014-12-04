@@ -3726,4 +3726,2416 @@ asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
 # SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7029 kB (elbread=1027 elab2=5850 kernel=151 sdf=0)
+#  7:41 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @7us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 7 us
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7030 kB (elbread=1027 elab2=5851 kernel=151 sdf=0)
+#  7:43 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @7us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 7 us
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+run @14us
+# KERNEL: stopped at time: 14 us
+endsim
+#  Simulation has been stopped
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7030 kB (elbread=1027 elab2=5851 kernel=151 sdf=0)
+#  7:44 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @7us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 7 us
+endsim
+#  Simulation has been stopped
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7030 kB (elbread=1027 elab2=5851 kernel=151 sdf=0)
+#  7:45 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @7us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 7 us
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7030 kB (elbread=1027 elab2=5851 kernel=151 sdf=0)
+#  7:47 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @8us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 8 us
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7030 kB (elbread=1027 elab2=5851 kernel=151 sdf=0)
+#  7:48 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @8us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 8 us
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7030 kB (elbread=1027 elab2=5851 kernel=151 sdf=0)
+#  7:50 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @8us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 8 us
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7030 kB (elbread=1027 elab2=5851 kernel=151 sdf=0)
+#  7:57 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @8us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__31.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 8 us
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7030 kB (elbread=1027 elab2=5851 kernel=151 sdf=0)
+#  8:01 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @8us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__31.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 8 us
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  8:03 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__31.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Error: COMP96_0015: instruction_decoder.vhd : (33, 4): ';' expected.
+# Error: COMP96_0019: instruction_decoder.vhd : (33, 4): Keyword 'end' expected.
+# Error: COMP96_0016: instruction_decoder.vhd : (33, 8): Design unit declaration expected.
+# Error: COMP96_0019: instruction_decoder.vhd : (34, 28): Keyword 'of' expected.
+# Error: COMP96_0018: instruction_decoder.vhd : (34, 28): Identifier expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  8:12 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  8:15 PM, Wednesday, December 3, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.7 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  11:19 AM, Thursday, December 4, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+# Warning: Failed to connect to the license server. 4 tries left.
+# Connection to the license server has been restored.
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  11:23 AM, Thursday, December 4, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  11:24 AM, Thursday, December 4, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+endsim
+#  Simulation has been stopped
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  11:28 AM, Thursday, December 4, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Error: COMP96_0015: ram_256.vhd : (25, 42): ')' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  11:35 AM, Thursday, December 4, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  11:36 AM, Thursday, December 4, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  11:37 AM, Thursday, December 4, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7031 kB (elbread=1027 elab2=5852 kernel=151 sdf=0)
+#  12:07 PM, Thursday, December 4, 2014
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+run @10us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__25.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__28.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__30.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/id,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__32.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/reg_file,  Process: line__34.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /processor_tb/UUT/id,  Process: line__22.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 4,  Instance: /processor_tb/UUT/alu1/Multiplier,  Process: line__29.
+# KERNEL: stopped at time: 10 us
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+endsim
+#  Simulation has been stopped
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is 

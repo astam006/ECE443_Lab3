@@ -10,7 +10,7 @@ entity inst_decoder is
 		B: out std_logic_vector(2 downto 0);
 		D: out std_logic_vector(2 downto 0);
 		V: out std_logic_vector(15 downto 0);
-		aluSrc, regWrite, memToReg, cs: out std_logic
+		aluSrc, regWrite, memToReg, cs, rw: out std_logic
 	);
 end inst_decoder;
 
@@ -25,7 +25,9 @@ begin
 	aluSrc <= 	'1' when opCode = "101" else
 				'1' when opCode = "110" else
 				'1' when opCode = "111" else '0';
-	regWrite <= '1' when opCode = "110" else '1';
+	regWrite <= '0' when opCode = "110" else '1';
 	memToReg <= '1' when opCode = "111" else '0';
-	cs <= '1' when opCode = "110" else '1' when opCode = "111" else '0';
+	cs <= '1' when opCode = "110" else 
+			'1' when opCode = "111" else '0';
+	rw <= '1' when opCode = "110" else '0';
 end architecture behavioral;

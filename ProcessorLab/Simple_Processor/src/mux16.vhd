@@ -37,7 +37,7 @@ begin
 		elsif(S="110") then
 			Y <= B;					--Pass through B
 		elsif(S="111") then
-			Y <= H;					--Undefined
+			Y <= B;					--Undefined
 		end if;
 	end process;	
 end mux;
