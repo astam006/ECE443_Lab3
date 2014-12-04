@@ -10,3 +10,4 @@ i<>.\src\mux16.vhd
 i<>.\src\ALU.vhd
 i<>.\src\mux2.vhd
 i<>.\src\TestBench\processor_TB.vhd
+i<>.\src\instruction_decoder.vhd

@@ -41,12 +41,13 @@ Active_lib=
 TestBench=1
 
 [Files]
+/mux16.vhd=-1
 /ram_256.vhd=-1
-/multiplier16.vhd=-1
 /register_file_16x8.vhd=-1
 /mux2.vhd=-1
-/mux16.vhd=-1
 /half_adder.vhd=-1
+/multiplier16.vhd=-1
+/instruction_decoder.vhd=-1
 /FullAdder.vhd=-1
 /adder16.vhd=-1
 /subtractor16.vhd=-1
@@ -56,12 +57,13 @@ TestBench/processor_TB.vhd=-1
 TestBench/processor_TB_runtest.do=-1
 
 [Files.Data]
+.\src\mux16.vhd=VHDL Source Code
 .\src\ram_256.vhd=VHDL Source Code
-.\src\multiplier16.vhd=VHDL Source Code
 .\src\register_file_16x8.vhd=VHDL Source Code
 .\src\mux2.vhd=VHDL Source Code
-.\src\mux16.vhd=VHDL Source Code
 .\src\half_adder.vhd=VHDL Source Code
+.\src\multiplier16.vhd=VHDL Source Code
+.\src\instruction_decoder.vhd=VHDL Source Code
 .\src\FullAdder.vhd=VHDL Source Code
 .\src\adder16.vhd=VHDL Source Code
 .\src\subtractor16.vhd=VHDL Source Code

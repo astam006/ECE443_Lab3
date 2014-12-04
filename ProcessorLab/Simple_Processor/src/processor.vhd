@@ -13,6 +13,17 @@ end entity;
 
 architecture behavioral of processor is
 
+component inst_decoder is
+	port ( 
+		instruction: in std_logic_vector(15 downto 0);
+		A: out std_logic_vector(2 downto 0);
+		B: out std_logic_vector(2 downto 0);
+		D: out std_logic_vector(2 downto 0);
+		V: out std_logic_vector(15 downto 0);
+		aluSrc, regWrite, memToReg, cs: out std_logic
+	);
+end component;
+
 component mux2 is
 	port(
 		A: in std_logic_vector(15 downto 0);
@@ -54,132 +65,35 @@ component ram_256 is
 	);
 end component ram_256;
 
--- signals for instruction decoding
-signal opCode : std_logic_vector(2 downto 0);
-signal inst_a, inst_b: std_logic_vector(3 downto 0);
-signal inst_dest : std_logic_vector(3 downto 0);
-signal inst_value : std_logic_vector(15 downto 0);
+-- signals for instruction decoding					   
+signal inst_a, inst_b: std_logic_vector(2 downto 0):= "000";
+signal inst_dest : std_logic_vector(2 downto 0) := "000";
+signal inst_value : std_logic_vector(15 downto 0):= x"0000";
 -- signals for control
-signal regWrite : std_logic;
-signal memToReg : std_logic;
-signal aluSrc : std_logic;
+signal regWrite : std_logic := '0';
+signal memToReg : std_logic := '0';
+signal aluSrc : std_logic := '0';
 -- signals for register file
-signal regNewData : std_logic_vector(15 downto 0);
+signal regNewData : std_logic_vector(15 downto 0) := x"0000";
 --signals for ALU
-signal aluSrcOutput : std_logic_vector(15 downto 0);
-signal aluOutput : std_logic_vector(15 downto 0);
-signal C : std_logic_vector(15 downto 0);
-signal status : std_logic_vector(2 downto 0);
+signal aluSrcOutput : std_logic_vector(15 downto 0) := x"0000";
+signal aluOutput : std_logic_vector(15 downto 0) := x"0000";
+signal C : std_logic_vector(15 downto 0) := x"0000";
+signal status : std_logic_vector(2 downto 0) := "000";
 --signals for RAM
-signal ramOutput : std_logic_vector(15 downto 0);
+signal ramOutput : std_logic_vector(15 downto 0) := x"0000";
+signal chipSelect : std_logic := '0';
 
 begin
---Get opCode from Instruction
-process(clk)   
-begin
-	if(rising_edge(clk)) then
-		opCode <= instruction(14 downto 12);
-	end if;
-end process;
-
--- Instruction Decoder
-process(opCode, instruction)
-begin
-	case opCode is
-	  when "000" => --signed addition	R-type
-	  	inst_dest <= instruction(11 downto 8);
-		inst_a <= instruction(7 downto 4);
-		inst_b <= instruction(3 downto 0);
-		aluSrc <= '0';
-		memToReg <= '0';
-		regWrite <= '1';
-	  when "001" => --signed multiplication R-type
-	    inst_dest <= instruction(11 downto 8);
-		inst_a <= instruction(7 downto 4);
-		inst_b <= instruction(3 downto 0);
-		aluSrc <= '0';
-		memToReg <= '0';
-		regWrite <= '1';
-	  when "010" => --passthrough A R-type
-	    inst_dest <= instruction(11 downto 8);
-		inst_a <= instruction(7 downto 4);
-		inst_b <= instruction(3 downto 0);
-		regWrite <= '1';
-	  when "011" =>  --passthrough B R-type
-	    inst_dest <= instruction(11 downto 8);
-		inst_a <= instruction(7 downto 4);
-		inst_b <= instruction(3 downto 0);
-		regWrite <= '1';
-	  when "100" => --signed subtraction R-type
-	    inst_dest <= instruction(11 downto 8);
-		inst_a <= instruction(7 downto 4);
-		inst_b <= instruction(3 downto 0);
-		aluSrc <= '0';
-		memToReg <= '0';
-		regWrite <= '1';
-	  when "101" => --load immediate I-type
-	  	inst_dest <= instruction(11 downto 8);
-	 	inst_value <= std_logic_vector(resize(signed(instruction(7 downto 0)), 16));
-		regWrite <= '1';
-		aluSrc <= '1';
-		memToReg <= '0';
-	  when "110" => --store halfword I-type
-	  	inst_b <= instruction(11 downto 8);
-	 	inst_value <= std_logic_vector(resize(signed(instruction(7 downto 0)), 16));
-		regWrite <= '0';
-		aluSrc <= '0';
-	  when "111" => --load halfword I-type
-	  	inst_dest <= instruction(11 downto 8);
-	 	inst_value <= std_logic_vector(resize(signed(instruction(7 downto 0)), 16));
-		regWrite <= '1';
-	  when others =>  null;
-	end case;
-end process;
+ 
 
 -- Port mapping components to processor signals
-reg_file: register_file_16x8 port map(regWrite,clk,inst_dest(2 downto 0),regNewData,inst_a(2 downto 0),inst_b(2 downto 0),RA,RB); 
-alu1: ALU port map(RA,aluSrcOutput, aluOutput,opCode(2),opCode(1),opCode(0),C,status);
-ram1: ram_256 port map(clk, (not regWrite), '1', inst_value, aluOutput, ramOutput);
+id: inst_decoder port map(instruction, inst_a, inst_b, inst_dest, inst_value, aluSrc, regWrite, memToReg, chipSelect);
+reg_file: register_file_16x8 port map(regWrite,clk,inst_dest,regNewData,inst_a,inst_b,RA,RB); 
+alu1: ALU port map(RA,aluSrcOutput, aluOutput,instruction(14),instruction(13),instruction(12),C,status);
+ram1: ram_256 port map(clk, (not regWrite), chipSelect, aluOutput, RB, ramOutput);
 muxAluSrc: mux2 port map(RB,inst_value,aluSrc,aluSrcOutput);
-muxMemToReg: mux2 port map(aluOutput,x"0000",memToReg,regNewData);
-
----Store new value into destination register from ALU
-process(aluOutput)
-begin
-	if (regWrite = '1')	then	
-		-- Assigning register file data value to appropriate register debug signal.
-		case inst_dest is
-			when "0000" => R0 <= aluOutput;
-			when "0001" => R1 <= aluOutput;
-			when "0010" => R2 <= aluOutput;
-			when "0011" => R3 <= aluOutput;
-			when "0100" => R4 <= aluOutput;
-			when "0101" => R5 <= aluOutput;
-			when "0110" => R6 <= aluOutput;
-			when "0111" => R7 <= aluOutput;
-			when others => null;
-		end case;
-	end if;
-end process;
-
---Store new value into destination register from RAM
-process(ramOutput)
-begin
-	if (regWrite = '0')	then	
-		-- Assigning register file data value to appropriate register debug signal.
-		case inst_a is
-			when "0000" => R0 <= ramOutput;
-			when "0001" => R1 <= ramOutput;
-			when "0010" => R2 <= ramOutput;
-			when "0011" => R3 <= ramOutput;
-			when "0100" => R4 <= ramOutput;
-			when "0101" => R5 <= ramOutput;
-			when "0110" => R6 <= ramOutput;
-			when "0111" => R7 <= ramOutput;
-			when others => null;
-		end case;
-	end if;
-end process;
+muxMemToReg: mux2 port map(aluOutput,ramOutput,memToReg,regNewData);
 
 
 

@@ -1,9 +1,10 @@
+"c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd" VHDL simple_processor 1 0 0 -02 -08
 "c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd" VHDL simple_processor 1 0 0 -02 -08
-"c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd" VHDL simple_processor 1 0 0 -02 -08
 "c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd" VHDL simple_processor 1 0 0 -02 -08
 "c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd" VHDL simple_processor 1 0 0 -02 -08
-"c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd" VHDL simple_processor 1 0 0 -02 -08
 "c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd" VHDL simple_processor 1 0 0 -02 -08
+"c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd" VHDL simple_processor 1 0 0 -02 -08
+"c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd" VHDL simple_processor 1 0 0 -02 -08
 "c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd" VHDL simple_processor 1 0 0 -02 -08
 "c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd" VHDL simple_processor 1 0 0 -02 -08
 "c:\Users\Larry\Documents\GitHub\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd" VHDL simple_processor 1 0 0 -02 -08

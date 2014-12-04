@@ -21,10 +21,12 @@ architecture behavioral of register_file_16x8 is
 
     begin 
     process(Clk)
-    begin 
-        if RegWrite='1' then
-            register_file(to_integer(unsigned(WriteRegNum))) <= WriteData;
-        end if;
+    begin
+		if(rising_edge(Clk))then
+	        if RegWrite='1' then
+	            register_file(to_integer(unsigned(WriteRegNum))) <= WriteData;
+	        end if;
+		end if;
     end process;
 
     PortA <= register_file(to_integer(unsigned(ReadRegNumA)));

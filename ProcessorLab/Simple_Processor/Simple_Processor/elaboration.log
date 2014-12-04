@@ -1,4 +1,4 @@
-Active-HDL 9.3.2744.sp1.09.4995  2014-12-03 16:13:39
+Active-HDL 9.3.2744.sp1.09.4995  2014-12-03 19:41:02
 
 Elaboration top modules:
 VHDL Configuration            testbench_for_processor
@@ -9,6 +9,7 @@ Entity             | Architecture    | Library          | Info | Compiler Versio
 -----------------------------------------------------------------------------------------------------------------------
 processor_tb       | tb_architecture | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
 processor          | behavioral      | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
+inst_decoder       | behavioral      | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
 register_file_16x8 | behavioral      | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
 ALU                | alu_arc         | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
 ram_256            | behavioral      | simple_processor |      | 9.3.2744.sp1.09.4995  (Windows) | -O3 -2008
