@@ -57,6 +57,13 @@ begin
 		);
 
 	-- Add your stimulus here ...
+	process
+	begin
+		instruction <= x"0201";
+		wait for 500ns;
+		instruction <= x"500A";
+		wait for 500ns;
+	end process;
 
 end TB_ARCHITECTURE;
 

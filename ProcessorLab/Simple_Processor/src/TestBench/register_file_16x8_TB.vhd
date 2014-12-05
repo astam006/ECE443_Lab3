@@ -49,7 +49,25 @@ begin
 			PortB => PortB
 		);
 
-	-- Add your stimulus here ...
+	-- Add your stimulus here ... 
+	process
+	begin
+		Clk <= '0';
+		wait for 250ns;
+		Clk <= '1';
+		wait for 250ns;
+	end process;
+	
+	process
+	begin
+		RegWrite 	<= '1';
+		WriteRegNum <= "000";
+		WriteData 	<= x"0001";
+		ReadRegNumA <= "000";
+		ReadRegNumB <= "001";
+		wait for 500ns;
+	end process;
+		
 
 end TB_ARCHITECTURE;
 

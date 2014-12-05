@@ -1,4 +1,4 @@
-15703
+16635
 ~E 1 "./../src/adder16.vhd" 5 adder16
 ~A 1 "./../src/adder16.vhd" 16 func
 ~E 1 "./../src/ALU.vhd" 7 ALU
@@ -37,9 +37,9 @@
 ~A 1 "./../src/TestBench/register_file_16x8_TB.vhd" 10 TB_ARCHITECTURE
 ~E 1 "./../src/subtractor16.vhd" 5 subtractor16
 ~A 1 "./../src/subtractor16.vhd" 15 subtract
-~C 1 "./../src/TestBench/inst_decoder_TB.vhd" 63 testbench_for_inst_decoder
+~C 1 "./../src/TestBench/inst_decoder_TB.vhd" 70 testbench_for_inst_decoder
 ~C 1 "./../src/TestBench/processor_TB.vhd" 113 testbench_for_processor
-~C 1 "./../src/TestBench/ram_256_TB.vhd" 50 testbench_for_ram_256
-~C 1 "./../src/TestBench/register_file_16x8_TB.vhd" 56 testbench_for_register_file_16x8
+~C 1 "./../src/TestBench/ram_256_TB.vhd" 70 testbench_for_ram_256
+~C 1 "./../src/TestBench/register_file_16x8_TB.vhd" 74 testbench_for_register_file_16x8
 ~E 1 "./../src/half_adder.vhd" 23 xorGate
 ~A 1 "./../src/half_adder.vhd" 29 func

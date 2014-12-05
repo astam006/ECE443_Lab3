@@ -44,6 +44,26 @@ begin
 		);
 
 	-- Add your stimulus here ...
+	process
+	begin
+		clock <= '0';
+		wait for 250ns;
+		clock <= '1';
+		wait for 250ns;
+	end process;
+	
+	process
+	begin
+		rw <= '1';
+		cs <= '1';
+		address <= x"000B";
+		DataIn <= x"0003";
+		wait for 500ns;
+		rw <= '0';
+		cs <= '0';
+		address <= x"000B";
+		wait for 500ns;
+	end process;
 
 end TB_ARCHITECTURE;
 
