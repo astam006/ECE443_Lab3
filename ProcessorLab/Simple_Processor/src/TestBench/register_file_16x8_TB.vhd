@@ -66,6 +66,11 @@ begin
 		ReadRegNumA <= "000";
 		ReadRegNumB <= "001";
 		wait for 500ns;
+		RegWrite	<= '1';
+		WriteRegNum <= "001";
+		WriteData	<= x"000A";
+		ReadRegNumA <= "000";
+		RedRegNumB	<= "001";
 	end process;
 		
 

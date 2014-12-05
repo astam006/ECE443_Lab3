@@ -58,4 +58,635 @@ acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $
 # Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
 # Compile Configuration "TESTBENCH_FOR_inst_decoder"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
-acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Compile Configuration "TESTBENCH_FOR_inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Error: COMP96_0019: register_file_16x8_TB.vhd : (53, 2): Keyword 'end' expected.
+# Error: COMP96_0016: register_file_16x8_TB.vhd : (54, 3): Design unit declaration expected.
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Compile Configuration "TESTBENCH_FOR_inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.7 [s]
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Error: COMP96_0015: register_file_16x8_TB.vhd : (68, 8): ';' expected.
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Compile Configuration "TESTBENCH_FOR_inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Compile Configuration "TESTBENCH_FOR_inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Compile Configuration "TESTBENCH_FOR_inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Entity => processor_tb
+# Configuration => TESTBENCH_FOR_register_file_16x8
+# Entity => register_file_16x8_tb
+# Configuration => TESTBENCH_FOR_ram_256
+# Entity => ram_256_tb
+# Configuration => TESTBENCH_FOR_inst_decoder
+# Entity => inst_decoder_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Compile Configuration "TESTBENCH_FOR_inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.9 [s]
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Compile Configuration "TESTBENCH_FOR_inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_processor
+# Entity => processor_tb
+# Configuration => TESTBENCH_FOR_register_file_16x8
+# Entity => register_file_16x8_tb
+# Configuration => TESTBENCH_FOR_ram_256
+# Entity => ram_256_tb
+# Configuration => TESTBENCH_FOR_inst_decoder
+# Entity => inst_decoder_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Error: COMP96_0019: inst_decoder_TB.vhd : (67, 5): Keyword 'process' expected.
+# Error: COMP96_0019: inst_decoder_TB.vhd : (69, 1): Keyword 'end' expected.
+# Error: COMP96_0016: inst_decoder_TB.vhd : (69, 15): Design unit declaration expected.
+# Error: COMP96_0018: inst_decoder_TB.vhd : (72, 8): Identifier expected.
+# Error: COMP96_0016: inst_decoder_TB.vhd : (72, 15): Design unit declaration expected.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Compile failure 5 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\register_file_16x8_TB.vhd
+# Compile Entity "register_file_16x8_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "register_file_16x8_tb"
+# Compile Configuration "TESTBENCH_FOR_register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\inst_decoder_TB.vhd
+# Compile Entity "inst_decoder_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "inst_decoder_tb"
+# Compile Configuration "TESTBENCH_FOR_inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\ram_256_TB.vhd
+# Compile Entity "ram_256_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ram_256_tb"
+# Compile Configuration "TESTBENCH_FOR_ram_256"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+acom -reorder -O3 -work simple_processor -2008  $dsn/src/mux16.vhd $dsn/src/ram_256.vhd $dsn/src/register_file_16x8.vhd $dsn/src/mux2.vhd $dsn/src/half_adder.vhd $dsn/src/multiplier16.vhd $dsn/src/instruction_decoder.vhd $dsn/src/FullAdder.vhd $dsn/src/adder16.vhd $dsn/src/subtractor16.vhd $dsn/src/ALU.vhd $dsn/src/processor.vhd $dsn/src/TestBench/processor_TB.vhd $dsn/src/TestBench/register_file_16x8_TB.vhd $dsn/src/TestBench/inst_decoder_TB.vhd $dsn/src/TestBench/ram_256_TB.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux16.vhd
+# Compile Entity "mux16"
+# Compile Architecture "mux" of Entity "mux16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ram_256.vhd
+# Compile Entity "ram_256"
+# Compile Architecture "behavioral" of Entity "ram_256"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\register_file_16x8.vhd
+# Compile Entity "register_file_16x8"
+# Compile Architecture "behavioral" of Entity "register_file_16x8"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\mux2.vhd
+# Compile Entity "mux2"
+# Compile Architecture "behavioral" of Entity "mux2"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\half_adder.vhd
+# Compile Entity "andGate"
+# Compile Architecture "func" of Entity "andGate"
+# Compile Entity "xorGate"
+# Compile Architecture "func" of Entity "xorGate"
+# Compile Entity "half_adder"
+# Compile Architecture "adder" of Entity "half_adder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\multiplier16.vhd
+# Compile Entity "multiplier16"
+# Compile Architecture "multiply" of Entity "multiplier16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\instruction_decoder.vhd
+# Compile Entity "inst_decoder"
+# Compile Architecture "behavioral" of Entity "inst_decoder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\FullAdder.vhd
+# Compile Entity "orGate"
+# Compile Architecture "func" of Entity "orGate"
+# Compile Entity "FullAdder"
+# Compile Architecture "func" of Entity "fullAdder"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\adder16.vhd
+# Compile Entity "adder16"
+# Compile Architecture "func" of Entity "adder16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\subtractor16.vhd
+# Compile Entity "subtractor16"
+# Compile Architecture "subtract" of Entity "subtractor16"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU_arc" of Entity "ALU"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\processor.vhd
+# Compile Entity "processor"
+# Compile Architecture "behavioral" of Entity "processor"
+# File: d:\GitHub\ECE443_Lab3\ECE443_Lab3\ProcessorLab\Simple_Processor\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TES
