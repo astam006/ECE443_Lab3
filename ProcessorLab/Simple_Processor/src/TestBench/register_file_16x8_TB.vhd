@@ -70,7 +70,8 @@ begin
 		WriteRegNum <= "001";
 		WriteData	<= x"000A";
 		ReadRegNumA <= "000";
-		RedRegNumB	<= "001";
+		ReadRegNumB	<= "001";
+		wait for 500ns;
 	end process;
 		
 

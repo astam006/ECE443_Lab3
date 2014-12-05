@@ -1,44 +1,57 @@
-Active-HDL 9.2.2499.sp1.36.4586  2014-12-04 14:06:46
+Active-HDL 9.2.2499.sp1.36.4586  2014-12-04 20:14:57
 
 Elaboration top modules:
-Architecture                  behavioral(processor)
+VHDL Configuration            testbench_for_processor
 
 
---------------------------------------------------------------------------------------------------------------------
-Entity             | Architecture | Library          | Info | Compiler Version                | Compilation Options
---------------------------------------------------------------------------------------------------------------------
-processor          | behavioral   | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-inst_decoder       | behavioral   | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-register_file_16x8 | behavioral   | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-ALU                | alu_arc      | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-ram_256            | behavioral   | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-mux2               | behavioral   | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-adder16            | func         | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-subtractor16       | subtract     | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-multiplier16       | multiply     | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-mux16              | mux          | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-FullAdder          | func         | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-half_adder         | adder        | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-orGate             | func         | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-xorGate            | func         | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
-andGate            | func         | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
---------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+Entity             | Architecture    | Library          | Info | Compiler Version                | Compilation Options
+-----------------------------------------------------------------------------------------------------------------------
+processor_tb       | tb_architecture | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+processor          | behavioral      | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+inst_decoder       | behavioral      | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+register_file_16x8 | behavioral      | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+ALU                | alu_arc         | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+ram_256            | behavioral      | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+mux2               | behavioral      | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+adder16            | func            | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+subtractor16       | subtract        | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+multiplier16       | multiply        | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+mux16              | mux             | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+FullAdder          | func            | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+half_adder         | adder           | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+orGate             | func            | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+xorGate            | func            | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+andGate            | func            | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+-----------------------------------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------------------------------
-VHDL Package                      | Library          | Info | Compiler Version                | Compilation Options
---------------------------------------------------------------------------------------------------------------------
-standard                          | std              |      |                                 | <unavailable>
-TEXTIO                            | std              |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
-std_logic_1164                    | ieee             |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
-std_logic_arith                   | ieee             |      | 9.2.2499.sp1.36.4586  (Windows) | 
-STD_LOGIC_UNSIGNED                | ieee             |      | 9.2.2499.sp1.36.4586  (Windows) | 
-NUMERIC_STD                       | ieee             |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
---------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+VHDL Configuration                   | Library          | Info | Compiler Version                | Compilation Options
+-----------------------------------------------------------------------------------------------------------------------
+testbench_for_processor              | simple_processor |      | 9.2.2499.sp1.36.4586  (Windows) | -O3 -2008
+-----------------------------------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------------------------------------
-Library                           | Comment
---------------------------------------------------------------------------------------------------------------------
-ieee                              | Standard IEEE packages library
-simple_processor                  | None
-std                               | Standard VHDL library
---------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+VHDL Package                         | Library          | Info | Compiler Version                | Compilation Options
+-----------------------------------------------------------------------------------------------------------------------
+standard                             | std              |      |                                 | <unavailable>
+TEXTIO                               | std              |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+std_logic_1164                       | ieee             |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+std_logic_arith                      | ieee             |      | 9.2.2499.sp1.36.4586  (Windows) | 
+STD_LOGIC_UNSIGNED                   | ieee             |      | 9.2.2499.sp1.36.4586  (Windows) | 
+NUMERIC_STD                          | ieee             |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+Library                              | Comment
+-----------------------------------------------------------------------------------------------------------------------
+ieee                                 | Standard IEEE packages library
+simple_processor                     | None
+std                                  | Standard VHDL library
+-----------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+testbench_for_processor testbench_for_processor
+
+
+The performance of simulation is reduced. Version EDU Edition
